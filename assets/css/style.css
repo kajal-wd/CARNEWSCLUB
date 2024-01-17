@@ -58,9 +58,21 @@ body {
 
 .second-section {
     width: 100%;
-
+    
 }
 
+.third-section img{
+   
+    height: 250px;
+    object-fit: cover;
+   
+}
+
+.card-post img{
+    height: 360px;
+    object-fit: cover;
+    object-position:center;
+}
 
 .carousel-item img {
     width: 100%;
@@ -213,3 +225,6 @@ footer ul li a:hover{
 }
 
 
+.popular-post h2{
+    font-size: 20px;
+}
