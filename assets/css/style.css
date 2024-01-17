@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.right-login-section ul li {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.right-login-section ul {
+    display: flex;
+    gap: 30px;
+}
+
+.date {
+    font-size: 14px;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+    font-weight: 600;
+}
+
+.navbar {
+    box-shadow: 0 2px 3px rgba(100, 100, 100, 0.1);
+}
+
+ header input ,.News input{
+    height: 45px;
+    font-size: 20px !important;
+}
+
+.search {
+    display: none;
+    transition: 10s;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    padding: 60px;
+    box-shadow: 0 0 1px black;
+}
+
+.close {
+    display: none;
+}
+
+.img-left img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.second-section {
+    width: 100%;
+
+}
+
+
+.carousel-item img {
+    width: 100%;
+    height: 660px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item,
+.side-item {
+    position: relative;
+}
+
+.carousel-item .item-caption,
+.side-item .item-caption,
+.article-post-content .item-caption {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding: 20px 40px;
+}
+
+.item-caption .caption-name {
+    padding: 5px;
+    text-decoration: none;
+    background-color: #f5365c;
+    color: white;
+
+}
+
+.red-line {
+    background-color: red;
+    padding: 2px 0;
+}
+
+.grey-line {
+    background-color: rgb(206, 204, 204);
+    padding: 2px 0;
+}
+
+
+.list-number p {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    background-color: #eee;
+    border-radius: 50%;
+    font-style: italic;
+}
+
+.list-item {
+    margin: 10px;
+}
+
+.article-post-card {
+    position: relative;
+}
+
+.owl-carousel3 .item img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.owl-carousel3 .owl-carousel .owl-nav.disabled {
+    display: block !important;
+
+}
+
+
+.owl-carousel3 .owl-carousel .owl-nav button i{
+    font-size: 25px;
+    box-shadow: 0 0 2px black;
+    padding: 10px;
+
+}
+
+.owl-carousel3 .owl-carousel .owl-nav button:hover{
+    background-color:transparent;
+    color: black;
+}
+
+.owl-carousel3 .owl-carousel .owl-nav {
+    position: absolute;
+    top: -86px;
+    right: 0;
+}
+
+.fifth-section {
+    position: relative;
+}
+
+button.owl-next {
+    margin: 0 !important;
+}
+
+.category-img{
+    height: 250px !important;
+    object-fit: cover;
+    width: 100%;
+    object-position:top;
+}
+
+h1:hover , h2:hover , h3:hover{
+    color: red;
+}
+
+.left-technology-img{
+    overflow: hidden;
+}
+
+
+.left-technology-img img:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.tag-list ul li a:hover{
+   background-color: red;
+   color: white !important;
+   border-color: transparent !important;
+}
+
+.News{
+    background-color: white;
+    box-shadow: -1px 4px 10px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.facebook{
+    background-color: #3b5999;
+}
+
+.twitter{
+    background-color: #55acee;
+}
+
+.whatsapp{
+    background-color: #25d366;
+}
+
+.telegram{
+    background-color: #179cde;
+}
+
+
+footer ul li a:hover{
+    color: red !important;
+}
+
+
