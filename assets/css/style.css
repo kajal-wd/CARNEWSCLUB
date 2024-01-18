@@ -245,3 +245,31 @@ footer ul li a:hover{
     background-color: red !important;
     color: white !important;
 }
+
+.contact-input{
+    height: 50px;
+    width: 100%;
+    background: none !important;
+}
+
+textarea{
+    background: none !important;
+}
+
+.contact-tag{
+    position: absolute;
+    left:5%;
+    top:50%;
+    z-index: -1;
+    transform: translate(-5% , -50%);
+    display: inline-block;
+    color:grey;
+}
+
+.active-contact{
+    z-index: 1;
+    top: 0% !important;
+    background-color: white !important;
+    padding: 0px 5px;
+    transition: 0.3s;
+}
