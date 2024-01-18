@@ -228,3 +228,20 @@ footer ul li a:hover{
 .popular-post h2{
     font-size: 20px;
 }
+
+.post-content h6{
+    background-color:#f5365c;
+}
+
+.content-para{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.active-pagination{
+    background-color: red !important;
+    color: white !important;
+}
