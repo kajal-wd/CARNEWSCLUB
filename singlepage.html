@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singlepage</title>
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Owl carousel min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Owl carousel defaut min.css -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <!-- header start here -->
+    <header class="sticky-top">
+        <section class="upper_header bg-dark d-flex justify-content-center align-items-center">
+            <div class="container  d-flex py-2 justify-content-between align-items-center">
+                <p class="text-white m-0 date">Monday, March 22, 2020</p>
+
+                <div class="right-login-section d-flex gap-5 align-items-center">
+                    <ul class="text-white d-flex m-0">
+                        <li><a href="#" class="text-white text-decoration-none">Login / Register</a></li>
+                    </ul>
+
+                    <div class="social_media d-flex gap-4 ">
+                        <a href="#" class="text-decoration-none"><i class="ri-facebook-fill text-white fs-5"></i></a>
+                        <a href="#" class="text-decoration-none"> <i class="ri-twitter-fill text-white fs-5"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="ri-instagram-line text-white fs-5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- lower header -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container ">
+                <a class="navbar-brand" href="#">
+                    <h2>CAR<span class="text-danger">NEWS</span>CLUB</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item text-dark fs-5 ">
+                            <a class="nav-link  text-dark" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item fs-5 ">
+                            <a class="nav-link text-dark" href="carnews.html">Car News</a>
+                        </li>
+                        <li class="nav-item fs-5 ">
+                            <a class="nav-link text-dark" href="Bikenews.html">Bike News</a>
+                        </li>
+                        <li class="nav-item fs-5 ">
+                            <a class="nav-link text-dark" href="EVnews.html">EV News</a>
+                        </li>
+                        <li class="nav-item fs-5 ">
+                            <a class="nav-link text-dark" href="HybridNews.html">Hybrid News</a>
+                        </li>
+                        <li class="nav-item fs-5 ">
+                            <a class="nav-link text-dark" href="#">About</a>
+                        </li>
+                        <li class="nav-item fs-5 ">
+                            <a class="nav-link text-dark" href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                    <i class="ri-search-line fs-5 ms-4 search-icon" onclick="search_icon()"></i>
+                    <i class="ri-close-line fs-5 ms-4 close" onclick="cross_icon()"></i>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="search bg-white ">
+            <div class="container">
+                <form action="">
+                    <div class="input-group border border-1">
+                        <input type="text" placeholder="Search" class="form-control border-0 shadow-none">
+                        <button type="submit" class="border-0"><i
+                                class="ri-search-line fs-5 px-4 search-icon "></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- header end here -->
+
+    <!--Breadcrumb start-->
+    <section class="bg-light">
+        <div class="container">
+            <div class="my-4 py-4">
+                <i class="ri-home-4-line fs-5"></i>
+                <h4 class="d-inline-block fs-5">Home</h4>
+                <i class="ri-arrow-right-s-line fs-5"></i>
+                <h4 class="d-inline-block fs-5 text-danger">News</h4>
+            </div>
+        </div>
+    </section>
+    <!--Breadcrumb end-->
+
+
+    <!-- News section start here -->
+    <section class="news_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <!-- news heading -->
+                    <h2 class="fs-1">These Are the 5 Big Tech Stories to Watch in 2017</h2>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, hic.</p>
+                    <!-- news related image -->
+                    <div class="new-realted-image">
+                        <img src="https://www.drivespark.com/images/2023-12/mercedes-amg-sl-63-s-e-performance_170235860800.jpg"
+                            alt="" class="w-100">
+                    </div>
+
+                    <div class="news-content pt-4">
+                        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis eveniet odit
+                            libero perferendis doloribus dolores, sunt nihil maxime vitae ipsum laborum officiis beatae
+                            tempore delectus, accusantium minima ea vel fuga. Veniam, iure incidunt iste possimus nemo
+                            exercitationem saepe laudantium eveniet voluptatum dignissimos ratione atque voluptas in
+                            illo fugit asperiores aperiam inventore ea ipsa, ut quo qui fugiat quod minus? Quos fuga
+                            pariatur laborum quis, quia quas placeat, quidem ea modi possimus dolores consequatur, porro
+                            quam. Deserunt soluta dolorum aut molestias ipsum, dolor vitae laudantium? Suscipit,
+                            assumenda. Tempore nemo deleniti dolorem quis at esse distinctio aut, omnis tempora porro
+                            iusto dolore?</p>
+                    </div>
+
+                    <div class="news-tag d-flex gap-3 py-4 align-items-center">
+                        <i class="ri-bookmark-3-fill news-tag-icon fs-2 text-danger"></i>
+                        <!-- tags list -->
+                        <div class="tag-list ">
+                            <ul class="d-flex flex-wrap gap-3 p-0 m-0 justify-content-center align-items-center">
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="text-decoration-none text-dark border border-1 border-dark p-2">#PROPERTY</a>
+                                </li>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="text-decoration-none text-dark border border-1 border-dark p-2">#LIFE
+                                        STYLE</a></li>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="text-decoration-none text-dark border border-1 border-dark p-2">#SEA</a>
+                                </li>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="text-decoration-none text-dark border border-1 border-dark p-2">#TECHNOLOGY</a>
+                                </li>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="text-decoration-none text-dark border border-1 border-dark p-2">#FRAMEWORK</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- comment section -->
+                    <section class="comment">
+                        <div class="container">
+                            <h2> 2 Comments:</h2>
+                            <ul class="list-unstyled py-3">
+                                <li>
+                                    <div class="d-flex gap-3">
+                                        <div class="">
+                                            <div class="comment-logo d-flex justify-content-center align-items-center">
+                                                <i class="ri-user-fill fs-3"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="">
+                                            <h4>Kajal</h4>
+                                            <p>APRIL 24, 2019 AT 10:59 AM</p>
+                                            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                Obcaecati amet libero repellat, neque fugiat explicabo sint sit eum
+                                                incidunt ex ad velit. Perferendis illum sequi molestiae quia illo qui
+                                                odit.</p>
+
+
+                                            <button class="py-2 px-3 text-white border border-1 bg-danger"
+                                                onclick="replys()">Reply</button>
+
+                                            <form action="" class="comment-reply py-3 px-5 mt-2">
+                                                <textarea name="" id="" cols="30" rows="5"
+                                                    class="form-control"></textarea>
+                                                <button
+                                                    class="py-2 px-3 text-white border border-1 bg-dark mt-2">Submit</button>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                    <!-- reply section -->
+                                    <ul class="list-unstyled mt-4 ms-5">
+                                        <li>
+                                            <div class="d-flex gap-3">
+                                                <div class="">
+                                                    <div
+                                                        class="comment-logo d-flex justify-content-center align-items-center">
+                                                        <i class="ri-user-fill fs-3"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="">
+                                                    <h4>Kajal</h4>
+                                                    <p>APRIL 24, 2019 AT 10:59 AM</p>
+                                                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                        elit.
+                                                        Obcaecati amet libero repellat, neque fugiat explicabo sint sit
+                                                        eum
+                                                        incidunt ex ad velit. Perferendis illum sequi molestiae quia
+                                                        illo qui
+                                                        odit.</p>
+
+
+                                                    <button class="py-2 px-3 text-white border border-1 bg-danger"
+                                                        onclick="replys()">Reply</button>
+
+                                                    <form action="" class="comment-reply2 py-3 px-5 mt-2">
+                                                        <textarea name="" id="" cols="30" rows="5"
+                                                            class="form-control"></textarea>
+                                                        <button
+                                                            class="py-2 px-3 text-white border border-1 bg-dark mt-2">Submit</button>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- leave a comment -->
+                    <section class="bg-light p-0 p-lg-4">
+                        <h3>Leave a Reply</h3>
+                        <p>Your email address will not be published. Required fields are marked *</p>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="" class="p-2 fs-4">Comment</label>
+                                    <textarea name="" id="" cols="30" rows="8" class="form-control bg-white"></textarea>
+                                </div>
+
+                                <div class="col-md-6 py-3">
+                                    <label for="" class="p-2 fs-5">Name*</label>
+                                    <input type="text" class="form-control py-3">
+                                </div>
+                                <div class="col-md-6 py-3">
+                                    <label for="" class="p-2 fs-5">Email*</label>
+                                    <input type="text" class="form-control py-3">
+                                </div>
+                                <div class="col-12 py-3">
+                                    <label for="" class="p-2 fs-5">Website*</label>
+                                    <input type="text" class="form-control py-3">
+                                </div>
+                            </div>
+
+                            <button class="bg-danger text-white py-3 px-4 border-0 fs-5 my-2">Post comment</button>
+                        </form>
+                    </section>
+
+                    <!-- previous and next page -->
+                    <section class="my-4">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="#" class="text-decoration-none text-dark fs-3">Previous post</a>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ut modi eos culpa quidem suscipit voluptatem</p>
+                            </div>
+
+                            <div class="col-6">
+                                <a href="#" class="text-decoration-none text-dark fs-3">Previous post</a>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ut modi eos culpa quidem suscipit voluptatem</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- related news -->
+                   <section class="related-news-section">
+                    <h2>You May Also Like</h2>
+                    <div class="related-news mt-4">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item px-2">
+                                <img src="https://storage.googleapis.com/pai-images/2addff1fc6ed46cc9fcfc90c25a0454b.jpeg"
+                                    alt="">
+                                <div class="img-content">
+                                    <div class="d-flex gap-3 pt-3">
+                                        <p class="m-0 text-danger"> December 09 , 2024</p>
+                                    </div>
+        
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <h2 class="pt-2 fs-4"> Demonstration we already have the best deal</h2>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item px-2">
+                                <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2018-08/26/full/1535223437-504.jpg"
+                                    alt="">
+                                <div class="img-content">
+                                    <div class="d-flex gap-3 pt-3">
+                                        <p class="m-0 text-danger"> December 09 , 2024</p>
+                                    </div>
+        
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <h2 class="pt-2 fs-4"> Demonstration we already have the best deal</h2>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item px-2">
+                                <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/mercedes-benz-concepts-161110101015115021600x1060.jpg?itok=OF_dSiT7"
+                                    alt="">
+                                <div class="img-content">
+                                    <div class="d-flex gap-3 pt-3">
+                                        <p class="m-0 text-danger"> December 09 , 2024</p>
+                                    </div>
+        
+                                    <a href="#" class="text-decoration-none text-dark">
+                                        <h2 class="pt-2 fs-4"> Demonstration we already have the best deal</h2>
+                                    </a>
+                                </div>
+                            </div>
+        
+        
+                        </div>
+                    </div>
+                   </section>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="item d-flex gap-3 mb-3">
+                        <div class="img-left">
+                            <img src="https://media.istockphoto.com/id/1158547769/photo/car-driving-on-a-road.jpg?s=612x612&w=0&k=20&c=DWvTgClPT_kTsAkSJLIzVdThYuySNBN_aHpz8MMHITQ="
+                                alt="">
+                        </div>
+
+                        <div class="right-img-content ">
+                            <div class="d-flex gap-3">
+                                <p class="m-0 text-danger"> December 09 , 2024</p>
+                            </div>
+
+                            <div class="pt-2">
+                                <p class="m-0">6 Best Tips for Building a Good Shipping Boat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item d-flex gap-3 mb-3">
+                        <div class="img-left">
+                            <img src="https://media.istockphoto.com/id/1158547769/photo/car-driving-on-a-road.jpg?s=612x612&w=0&k=20&c=DWvTgClPT_kTsAkSJLIzVdThYuySNBN_aHpz8MMHITQ="
+                                alt="">
+                        </div>
+
+                        <div class="right-img-content ">
+                            <div class="d-flex gap-3">
+                                <p class="m-0 text-danger"> December 09 , 2024</p>
+                            </div>
+
+                            <div class="pt-2">
+                                <p class="m-0">6 Best Tips for Building a Good Shipping Boat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item d-flex gap-3 mb-3">
+                        <div class="img-left">
+                            <img src="https://media.istockphoto.com/id/1158547769/photo/car-driving-on-a-road.jpg?s=612x612&w=0&k=20&c=DWvTgClPT_kTsAkSJLIzVdThYuySNBN_aHpz8MMHITQ="
+                                alt="">
+                        </div>
+
+                        <div class="right-img-content ">
+                            <div class="d-flex gap-3">
+                                <p class="m-0 text-danger"> December 09 , 2024</p>
+                            </div>
+
+                            <div class="pt-2">
+                                <p class="m-0">6 Best Tips for Building a Good Shipping Boat</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="https://i.pinimg.com/736x/cd/e4/6c/cde46c98778d0bd86e9dc601032d8c4c.jpg" alt=""
+                        class="category-img">
+
+                    <div class="img-content">
+                        <div class="d-flex gap-3 pt-3">
+                            <p class="m-0 text-danger"> December 09 , 2024</p>
+                        </div>
+
+                        <a href="#" class="text-decoration-none text-dark">
+                            <h2 class="pt-2 fs-3"> Demonstration we already have the best deal</h2>
+                        </a>
+
+                        <p class="lead text-dark m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Quis, porro non asperiores
+                            sequi repudiandae quae? Ipsum quaerat quisquam qui rem.</p>
+
+                        <a href="#"
+                            class="d-inline-block my-3 text-decoration-none text-danger p-3 border border-1 border-danger">Read
+                            More</a>
+
+                    </div>
+
+
+                    <div>
+                        <h2 class="fw-bold">Tags</h2>
+                        <div class="line d-flex">
+                            <div class="red-line w-25"></div>
+
+                            <div class="grey-line w-75"></div>
+                        </div>
+
+                        <!-- tags list -->
+                        <div class="tag-list mt-5">
+                            <ul class="d-flex flex-wrap gap-3 p-0">
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="text-decoration-none text-dark border border-1 border-dark p-2">#PROPERTY</a>
+                                </li>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="text-decoration-none text-dark border border-1 border-dark p-2">#LIFE
+                                        STYLE</a></li>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="text-decoration-none text-dark border border-1 border-dark p-2">#SEA</a>
+                                </li>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="text-decoration-none text-dark border border-1 border-dark p-2">#TECHNOLOGY</a>
+                                </li>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="text-decoration-none text-dark border border-1 border-dark p-2">#FRAMEWORK</a>
+                                </li>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="text-decoration-none text-dark border border-1 border-dark p-2">#WFA</a>
+                                </li>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="text-decoration-none text-dark border border-1 border-dark p-2">#GAME</a>
+                                </li>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="text-decoration-none text-dark border border-1 border-dark p-2">#Property</a>
+                                </li>
+                                <li class="list-unstyled py-2"><a href="#"
+                                        class="text-decoration-none text-dark border border-1 border-dark p-2">#Property</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tags and newsletter -->
+                    <div class="mt-5">
+                        <h2 class="fw-bold">Newslater</h2>
+                        <div class="line d-flex">
+                            <div class="red-line w-25"></div>
+
+                            <div class="grey-line w-75"></div>
+                        </div>
+
+                        <!-- News -->
+                        <div class="News mt-5">
+                            <h2 class="text-dark fw-bold fs-5">The most important world news and events of the day.</h2>
+                            <p class="p-0 lead">Get magzrenvi daily newsletter on your inbox.</p>
+
+                            <form action="">
+                                <div class="input-group border border-1">
+                                    <input type="text" class="border-0 form-control shadow-none" placeholder="email">
+                                    <button type="submit" class="cursor-pointer border-0 bg-danger text-white px-3">SIGN
+                                        UP</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- footer start here -->
+    <footer class="bg-dark py-5 mt-4 px-3 px-lg-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 my-5">
+                    <h3 class="text-white mb-4">World</h3>
+                    <ul class="p-0 d-flex flex-column gap-4">
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 my-5">
+                    <h3 class="text-white mb-4">World</h3>
+                    <ul class="p-0 d-flex flex-column gap-4">
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 my-5">
+                    <h3 class="text-white mb-4">World</h3>
+                    <ul class="p-0 d-flex flex-column gap-4">
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 my-5">
+                    <h3 class="text-white mb-4">World</h3>
+                    <ul class="p-0 d-flex flex-column gap-4">
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+                        <li class="list-unstyled"><a href="#" class="text-white text-decoration-none">Global Economy</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- logo and social media -->
+            <div class="logo-social-media d-flex flex-column flex-lg-row justify-content-between">
+                <div class="logo">
+                    <a class="navbar-brand text-decoration-none text-white" href="#">
+                        <h2>CAR<span class="text-danger">NEWS</span>CLUB</h2>
+                    </a>
+                </div>
+
+                <div class="footer-social-footer">
+                    <ul class="p-0 d-flex gap-3">
+                        <a href="#" class="text-decoration-none"> <i
+                                class="ri-facebook-fill text-white border-0 py-2 px-3 rounded fs-4 facebook"></i></a>
+                        <a href="#" class="text-decoration-none"> <i
+                                class="ri-twitter-fill text-white border-0  py-2 px-3 rounded fs-4 twitter"></i></a>
+                        <a href="#" class="text-decoration-none"><i
+                                class="ri-whatsapp-line text-white border-0  py-2 px-3 rounded fs-4 whatsapp"></i></a>
+                        <a href="#" class="text-decoration-none"><i
+                                class="ri-telegram-line text-white border-0  py-2 px-3 rounded fs-4 telegram"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="text-white">Copyright © 2019 News and Magazine template based on Bootstrap 4 Theme by Retenvi</p>
+        </div>
+    </footer>
+    <!-- footer end here -->
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- owl carousel min js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- custom js -->
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
