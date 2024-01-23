@@ -232,7 +232,7 @@ h1:hover , h2:hover , h3:hover{
 }
 
 .google{
-    background-color: blue;
+    background-color: red;
 }
 
 footer ul li a:hover{
@@ -319,6 +319,7 @@ textarea{
 }
 
 .center-login{
+    width: 25%;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     backdrop-filter: blur(5px);
@@ -332,7 +333,7 @@ textarea{
     border-radius: 50%;
     position: absolute;
     right:33%;
-    top:23%; 
+    top:17%; 
     background: linear-gradient(90deg , purple , blue);
 }
 
@@ -343,7 +344,7 @@ textarea{
     border-radius: 50%;
     position: absolute;
     background: linear-gradient(90deg , purple , red);
-    top: 69%;
+    top: 75%;
     left:33%;
 }
 
@@ -354,7 +355,7 @@ textarea{
     position: absolute;
     background: linear-gradient(90deg , purple , blue);
     right:34%;
-    top:12%; 
+    top:14%; 
 }
 
 .circle2-signup{
@@ -363,7 +364,7 @@ textarea{
     border-radius: 50%;
     position: absolute;
     background: linear-gradient(90deg , purple , red);
-    top:86%;
+    top:82%;
     left:34%;
 }
 
@@ -391,4 +392,10 @@ textarea{
 
 .load-active{
   display: none;
+}
+
+@media (max-width:768px) {
+    .center-login{
+        width: 100% !important;
+    }
 }
