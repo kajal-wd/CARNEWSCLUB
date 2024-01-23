@@ -231,6 +231,9 @@ h1:hover , h2:hover , h3:hover{
     background-color: #179cde;
 }
 
+.google{
+    background-color: blue;
+}
 
 footer ul li a:hover{
     color: red !important;
@@ -305,4 +308,87 @@ textarea{
 
 .active-reply{
     display: block;
+}
+
+.login-section{
+    height: calc(100vh - 118.39px);
+     background: url(https://wallpaperaccess.com/full/124020.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+}
+
+.center-login{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid white;
+}
+
+.circle1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    right:33%;
+    top:23%; 
+    background: linear-gradient(90deg , purple , blue);
+}
+
+
+.circle2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(90deg , purple , red);
+    top: 69%;
+    left:33%;
+}
+
+.circle1-signup{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(90deg , purple , blue);
+    right:34%;
+    top:12%; 
+}
+
+.circle2-signup{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(90deg , purple , red);
+    top:86%;
+    left:34%;
+}
+
+.login-btn button{
+    background:red;
+    color: white;
+}
+
+.forget-password-section a{
+  color: red;
+ 
+}
+
+.loading{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    z-index: 999999;
+    background-color: white;
+    top: 0;
+    left: 0;
+}
+
+.load-active{
+  display: none;
 }

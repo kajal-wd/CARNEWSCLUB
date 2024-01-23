@@ -1,4 +1,4 @@
-console.log("hello");
+
 
 const search_btn = document.querySelector(".search-icon");
 const search_div = document.querySelector(".search");
@@ -85,4 +85,15 @@ $('.owl-carousel3 .owl-carousel').owlCarousel({
         }
     }
 })
+
+const load_div = document.querySelector(".loading");
+console.log(load_div);
+
+const loader = () => {
+    load_div.classList.add("load-active");
+    console.log("hello");
+}
+
+setTimeout(loader, 1000);
+
 

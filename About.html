@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main_project(Home)</title>
+    <title>About</title>
     <!-- remix icon cdn -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- custom css -->
@@ -29,12 +29,7 @@
 </head>
 
 <body>
-    <div class="loading">
-        <div class="d-flex justify-content-center align-items-center h-100 flex-column">
-            <img src="./assets/images/Double Ring-1s-90px.gif" alt="">
-            <h2>CAR<span class="text-danger">NEWS</span>CLUB</h2>
-        </div>
-    </div>
+
     <!-- header start here -->
     <header class="sticky-top">
         <section class="upper_header bg-dark d-flex justify-content-center align-items-center">
@@ -117,111 +112,51 @@
         <div class="container">
             <div class="my-4 py-4">
                 <i class="ri-home-4-line fs-5"></i>
-                <a href="index.html" class="text-decoration-none text-dark">
-                    <h4 class="d-inline-block fs-5">Home</h4>
-                </a>
+                <h4 class="d-inline-block fs-5">Home</h4>
                 <i class="ri-arrow-right-s-line fs-5"></i>
-                <h4 class="d-inline-block fs-5 text-danger">Contact</h4>
+                <h4 class="d-inline-block fs-5 text-danger">About</h4>
             </div>
         </div>
     </section>
     <!--Breadcrumb end-->
 
-
-    <!-- form start -->
+    <!--About section  -->
     <section>
         <div class="container">
+            <h1>Our Mission</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quia sint harum exercitationem.
+                Doloribus saepe mollitia maxime, dignissimos earum nihil minus at esse nobis amet adipisci magnam,
+                perferendis accusantium sapiente odio harum id velit quod iusto quae quia corrupti minima. Aliquam
+                perferendis explicabo adipisci? Similique recusandae doloribus quae non facere?</p>
 
             <div class="row">
-                <div class="col-md-8 mb-lg-0 mb-3">
-                    <h3>Contact Us</h3>
-                    <form action="">
-                        <div class="row">
-                            <div class="col-md-6 my-3 name position-relative ">
-                                <input type="text" placeholder=""
-                                    class="form-control shadow-none contact-input px-2 name" data="name"
-                                    onclick="changeffect(event)">
-                                <span class="ps-1 contact-tag name placeholder_name">name</span>
-                            </div>
-                            <div class="col-md-6 my-3 position-relative">
-                                <input type="text" placeholder=""
-                                    class="form-control shadow-none contact-input px-2 email" data="email"
-                                    onclick="changeffect(event)">
-                                <span class="ps-1 contact-tag email">email</span>
-                            </div>
-                            <div class="col-md-6 my-3 position-relative">
-                                <input type="text" placeholder=""
-                                    class="form-control shadow-none contact-input px-2 website" data="website"
-                                    onclick="changeffect(event)">
-                                <span class="ps-1 contact-tag website">website</span>
-                            </div>
-                            <div class="col-md-6 my-3 position-relative">
-                                <input type="text" placeholder=""
-                                    class="form-control shadow-none contact-input px-2 subject" data="subject"
-                                    onclick="changeffect(event)">
-                                <span class="ps-1 contact-tag subject">subject</span>
-                            </div>
-
-                            <div class="col-md-12 my-3 position-relative">
-                                <textarea name="" class="form-control shadow-none px-2 message" id="" cols="30"
-                                    data="message" rows="10" onclick="changeffect(event)"></textarea>
-                                <span class="ps-1 contact-tag message">Message</span>
-                            </div>
-
-
-                            <div class="col-12">
-                                <button type="submit" class="py-2 px-3 bg-danger text-white border-0 float-end">Submit</button>
-                            </div>
-                        </div>
-
-                    </form>
+                <div class="col-md-5 pb-3 pb-lg-0">
+                    <img src="https://wallpapercave.com/wp/NGzwTao.jpg" alt="" class="img-fluid rounded">
                 </div>
 
-                <div class="col-md-4 px-lg-5 ">
-                    <h3>Info location</h3>
-
-                    <div class="info-location my-3">
-                        <div class="address d-flex gap-3 my-4">
-                             <div class="icon"><i class="ri-home-4-line fs-3 border border-1 py-1 px-2"></i></div>
-                            <a href="#" class="text-decoration-none text-dark fs-5">PO Box 16122 Collins Street West Victoria 8007 Australia</a>
-                        </div>
-                        <div class="phone d-flex gap-3 my-4">
-                             <div class="icon"><i class="ri-phone-fill fs-3 border border-1 py-1 px-2"></i></div>
-                            <a href="#" class="text-decoration-none text-dark fs-5">(+12) 34567 890 123</a>
-                        </div>
-                        <div class="email d-flex gap-3 my-4">
-                             <div class="icon"><i class="ri-mail-line fs-3 border border-1 py-1 px-2"></i></div>
-                             <a href="#" class="text-decoration-none text-dark fs-5">mail@example.com</a>
-                        </div>
-                        <div class="address d-flex gap-3 my-4">
-                             <div class="icon"><i class="ri-earth-fill fs-3 border border-1 py-1 px-2" ></i></div>
-                            <a href="#" class="text-decoration-none text-dark fs-5">www.yourdomain.com</a>
-                        </div>
-                    </div>
-
-                    <div class="find-us">
-                        <h3>Find Us</h3>
-                        <div class="footer-social-footer mt-3">
-                            <ul class="p-0 d-flex gap-3">
-                                <a href="#" class="text-decoration-none"> <i
-                                        class="ri-facebook-fill text-white border-0 py-2 px-3 rounded fs-4 facebook"></i></a>
-                                <a href="#" class="text-decoration-none"> <i
-                                        class="ri-twitter-fill text-white border-0  py-2 px-3 rounded fs-4 twitter"></i></a>
-                                <a href="#" class="text-decoration-none"><i
-                                        class="ri-whatsapp-line text-white border-0  py-2 px-3 rounded fs-4 whatsapp"></i></a>
-                                <a href="#" class="text-decoration-none"><i
-                                        class="ri-telegram-line text-white border-0  py-2 px-3 rounded fs-4 telegram"></i></a>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="col-md-7">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quos sunt ut
+                        voluptates, sapiente tenetur odio rem eum eaque voluptas aliquid animi non nostrum doloribus vel
+                        nihil reprehenderit dicta ex et ab numquam. Rerum laborum beatae voluptatibus consectetur id
+                        soluta voluptatem dolorum earum eum, mollitia exercitationem reiciendis obcaecati quae tempore
+                        necessitatibus distinctio et ab ratione molestiae dolore? Omnis, delectus ex?</p>
                 </div>
             </div>
+
+            <p class="lead pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ut temporibus quod
+                libero eos porro sunt nihil quas soluta facilis tenetur magni? Nemo neque culpa eius fuga voluptas iusto
+                autem laudantium totam quo deserunt adipisci reprehenderit non explicabo nobis voluptatibus, consectetur
+                animi ratione itaque ducimus consequatur officia beatae qui facere. Consequuntur odit, explicabo cumque
+                impedit nostrum dignissimos corrupti quia aliquid enim. Doloribus repellendus placeat enim hic dolorem
+                obcaecati distinctio assumenda maxime excepturi suscipit quae ipsa voluptatum, optio consequatur ratione
+                rerum dicta adipisci, odit sint labore? Nulla animi libero temporibus obcaecati repellendus debitis,
+                amet provident? Quidem aliquid doloribus optio deleniti accusamus!</p>
         </div>
     </section>
 
 
     <!-- footer start here -->
-     <footer class="bg-dark py-5 mt-4 px-3 px-lg-0">
+    <footer class="bg-dark py-5 mt-4 px-3 px-lg-0">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 my-5">
@@ -337,10 +272,8 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- custom js -->
     <script src="./assets/js/index.js"></script>
 </body>
-
-
-
 
 </html>
