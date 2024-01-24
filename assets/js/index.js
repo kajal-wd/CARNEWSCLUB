@@ -86,6 +86,26 @@ $('.owl-carousel3 .owl-carousel').owlCarousel({
     }
 })
 
+$('.related-news .owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    navText: ['<i class="ri-arrow-left-s-line"></i>', '<i class="ri-arrow-right-s-line"></i>'],
+    dots: false,
+    autoplay: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+})
+
 const load_div = document.querySelector(".loading");
 console.log(load_div);
 

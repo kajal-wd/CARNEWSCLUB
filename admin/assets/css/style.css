@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.admin-name{
+    background-image: url(https://sadj.reactai.com/mpa/img/card-backgrounds/cover-2-lg.png);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    width: 100% !important;
+}
+
+.menu ul .active{
+    background-color: rgba(255, 255, 255, 0.135);
+    border-left: 4px solid white;
+}
+
+.menu ul li:hover{
+    background-color: rgba(0, 0, 0, 0.406);
+    cursor: pointer;
+    /* border-left: 4px solid white; */
+}
+
+.sidebar-wrapper{
+    background-image: linear-gradient(black , red);
+    width: 400px;   
+    position: sticky;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+/* .menu li a span{
+    display: none;
+    text-wrap: nowrap;
+}
+.sidebar-wrapper:hover{
+    width: 400px;
+    transition: 1s;
+}
+.sidebar-wrapper:hover .menu li a span{
+    display: block;
+   
+} */

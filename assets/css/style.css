@@ -154,7 +154,7 @@ body {
     background-color:transparent;
     color: black;
 }
-.related-news.owl-carousel .owl-nav button:hover{
+.related-news .owl-carousel .owl-nav button:hover{
     background-color: transparent !important;
 }
 
