@@ -29,50 +29,84 @@
 </head>
 
 <body>
-    <!-- sidebar -->
-        <aside>
-            <div class="sidebar-wrapper">
-                <div class="sidebar-content">
-                    <div class="logo">
-                        <h2 class="p-3 text-white text-center">CAR<span class="text-danger">NEWS</span>CLUB</h2>
-                    </div>
-
-                    <div class="admin-name d-flex gap-3 align-items-center justify-content-center">
-                        <i
-                            class="user-icon ri-user-fill d-inline-block text-white border border-1 border-white py-2 px-3 fs-5 rounded"></i>
-                        <h3 class="text-white">Dr Codex latern</h3>
-                    </div>
-
-                    <div class="menu vh-100 mt-4">
-                        <ul class="list-unstyled">
-                            <li class=" active p-3"><a href="#"
-                                    class="text-decoration-none text-white fs-4 d-flex gap-2"><i
-                                        class="ri-bar-chart-2-fill text-white fs-4"></i><span>Total content</span></a>
-                            </li>
-                            <li class="  p-3 text-center"><a href="#" class="text-decoration-none text-white fs-4 d-flex gap-2 text-center"><i
-                                        class="ri-bar-chart-2-fill text-white fs-4"></i><span>Menu 1</span></a>
-                            </li>
-                            <li class="  p-3 text-center"><a href="#" class="text-decoration-none text-white fs-4 d-flex gap-2"><i
-                                        class="ri-bar-chart-2-fill text-white fs-4"></i><span>Menu 1</span></a>
-                            </li>
-                            <li class="  p-3 text-center"><a href="#" class="text-decoration-none text-white fs-4 d-flex gap-2"><i
-                                        class="ri-bar-chart-2-fill text-white fs-4"></i><span>Menu 1</span></a>
-                            </li>
-                            <li class=" p-3 text-center"><a href="#" class="text-decoration-none text-white fs-4 d-flex gap-2"><i
-                                        class="ri-bar-chart-2-fill text-white fs-4"></i><span>Menu 1</span></a>
-                            </li>
-                            <li class="  p-3 text-center"><a href="#" class="text-decoration-none text-white fs-4 d-flex gap-2"><i
-                                        class="ri-bar-chart-2-fill text-white fs-4"></i><span>Menu 1</span></a>
-                            </li>
-                        </ul>
+    <section class="wrapper-sectoion">
+        <div class="d-flex">
+            <!-- sidebar -->
+            <aside class="">
+                <div class="sidebar-wrapper">
+                    <div class="sidebar-content">
+                        <div class="logo pt-3 ps-5 py-4">
+                            <h2 class="text-white">CAR<span class="text-danger">NEWS</span>CLUB</h2>
+                        </div>
+    
+                        <div class="admin-name d-flex gap-3 align-items-center ps-5">
+                            <img src="https://themewagon.github.io/darkpan/img/user.jpg" alt=""
+                                class="img-fluid rounded-circle">
+                            <div class="admin-info">
+                                <h3 class="text-white fs-5 m-0">John Doe</h3>
+                                <p class="pt-1 m-0">Admin</p>
+                            </div>
+                        </div>
+    
+                        <div class="menu vh-100 mt-4 pe-4">
+                            <ul class="list-unstyled">
+                                <li class=" active py-3 px-5"><a href="#" class="text-decoration-none  fs-4 d-flex gap-2"><i
+                                            class="ri-bar-chart-2-fill fs-4"></i><span>Total content</span></a>
+                                </li>
+                                <li class=" py-3 px-5 text-center"><a href="#"
+                                        class="text-decoration-none fs-4 d-flex gap-2 text-center"><i
+                                            class="ri-bar-chart-2-fill fs-4 "></i><span>Menu 1</span></a>
+                                </li>
+                                <li class="  py-3 px-5 text-center"><a href="#"
+                                        class="text-decoration-none fs-4 d-flex gap-2"><i
+                                            class="ri-bar-chart-2-fill fs-4"></i><span>Menu 1</span></a>
+                                </li>
+                                <li class=" py-3 px-5 text-center"><a href="#"
+                                        class="text-decoration-none  fs-4 d-flex gap-2"><i
+                                            class="ri-bar-chart-2-fill fs-4"></i><span>Menu 1</span></a>
+                                </li>
+                                <li class=" py-3 px-5 text-center"><a href="#"
+                                        class="text-decoration-none fs-4 d-flex gap-2"><i
+                                            class="ri-bar-chart-2-fill fs-4"></i><span>Menu 1</span></a>
+                                </li>
+                                <li class="  py-3 px-5 text-center"><a href="#"
+                                        class="text-decoration-none fs-4 d-flex gap-2"><i
+                                            class="ri-bar-chart-2-fill fs-4"></i><span>Menu 1</span></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </aside>
+            </aside>
+    
+            <!-- header -->
+            <header class="w-100">
+                <div class="header-content py-3 ps-5 d-flex row">
+                    <div class="left-header-content col-4 d-flex">
+                        <i class="ri-menu-line text-dark fs-4 menu"></i>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" placeholder="Search" class="ms-4 h-100" oninput="showcross()">
+                            <i class="ri-close-line text-danger cross" onclick="cutcross()"></i>
+                            </div>
+                        </form>
+                    </div>
+    
+                    <div class="right-header-content col-8 d-flex gap-4 justify-content-end">
+                        <i class="ri-message-2-fill message"></i>
+                        <i class="ri-notification-4-fill notification"></i>
+                        <div class="d-flex gap-3 w-25 align-items-center justify-content-center">
+                            <img src="https://themewagon.github.io/darkpan/img/user.jpg" alt=""
+                                class="img-fluid rounded-circle">
+                                <h3 class="text-white fs-5 m-0">John Doe</h3>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </section>
 
-
-
-    </div>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
